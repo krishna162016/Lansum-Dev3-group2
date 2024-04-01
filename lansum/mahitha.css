@@ -1,0 +1,200 @@
+.main{
+    display: flex;
+    justify-content:space-around ;
+    margin-top: 20px;
+}.nav a{
+    text-decoration: none;
+    
+    color:  #1995AD;;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    padding-left: 30px;
+    word-spacing: 0.5px;
+    position: relative;
+    
+}.nav{
+    margin-top: 25px;
+    margin-left: -100px;
+}.logo{
+    margin-top: 20px;
+}.btn button{
+    font-size: 17px;
+    padding: 10px 19px;
+    border: 1px solid  hsl(0, 5%, 76%);
+    color:  #1995AD;;
+    background-color: white;
+
+}.btn{
+    padding-left: 40px;
+}.btn button:hover{
+    box-shadow: 0px 0px 3px  blue;
+}.nav a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    top: 30px;
+    transition: all 0.3s;
+    height: 2px;
+    background-color: black;
+    
+}.nav a:hover::before{
+    content: '';
+    left: 20px;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    top: 30px;
+}.content{
+    text-align: center;
+    margin-top: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}.content h1{
+    text-transform: capitalize;
+    color: rgb(77, 77, 161);
+    letter-spacing: 0.6px;
+    
+}.content p{
+    color: #1995AD;; 
+    font-size: 20px;
+    line-height: 27px;
+}.btn2 button{
+    background-color:  #A1D6E2;
+    color: #1995AD;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: none;
+    left: 20px;
+
+}.card{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #A1D6E2;; 
+    width: 1000px;
+    height: 250px;
+    margin-left: 200px;
+    color: #1995AD;
+    padding-top: 50px;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    z-index: 1;
+    position: relative;
+}.card1 img{
+    margin-top: -130px;
+    z-index: -1;
+    position:absolute;
+    width: 100%;
+    
+}.card2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 600px;
+}.card2 h1{
+    letter-spacing: 1px;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif ;
+    color:  #1995AD;;
+    padding-left: 20px;
+}.card2 p{
+    color: #1995AD;;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}.card4{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 100px;
+    width: 80%;
+    height: 500px;
+    box-shadow: 0px 0px 8px  rgb(78, 78, 78);
+    background-color: #A1D6E2;
+}.box input{ 
+    width: 400px;
+    height: 50px;
+    background-color:rgb(241, 240, 240);
+   border: none;
+   font-size: 18px;
+}
+.box{
+
+padding-top: 65px;
+padding-left: 30px;
+
+    
+} input{
+    padding-left: 40px;
+    position: relative;
+}.box1 input{
+    width:400px ;
+    height: 240px;
+    margin-top: 65px;
+    margin-left: 50px;
+    background-color:rgb(241, 240, 240); 
+    border: none;
+    
+    font-size: 18px;
+
+}input[type="checkbox"]{
+    transform:scale(0) ;
+    transform: scale(0.5);
+    margin-top: 35px;
+    position: absolute;
+    margin-top: 10px;
+    
+}.btn3{
+    margin-top: 400px;
+    margin-left: -530px;
+}.btn3 button{
+    padding: 10px 50px;
+    background-color:#fafdfdb4 ;
+    color: 1995AD;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 17px;
+}.foot{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    
+}.head1  p{
+    color: #1995AD;;
+}.head1 h1{
+    color: #1995AD;;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}.head2 address{
+    color: #1995AD; ;
+    
+}.head2{
+    font-family: Arial, Helvetica, sans-serif;
+}.head2 h1{
+    color: #1995AD;; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}.head3 h1{
+    color: #1995AD;; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}.cons{
+    margin-top: 110px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-left: -320px;
+}.cons i{
+    font-size: 20px;
+    box-shadow: 0px 2px 4px white 0px 0px 2px blue;
+}.copy{
+    text-align: center;
+    margin-top: -80px;
+}.copy p{
+    color: #1995AD ;
+}

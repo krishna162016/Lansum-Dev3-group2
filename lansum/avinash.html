@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lansum 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.navbar{
+    height: 15vh;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 2px 3px lightgray;
+    position: relative;
+    z-index: 1000;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 300px;
+    margin-top: -30px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: grey;
+    font-size: 19px;
+    text-decoration: none;
+    margin: 10px;
+}
+nav ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.nav-image{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.nav-button{
+    width: 150px;
+    height: 40px;
+    margin-left: 900px;
+    margin-right: 80px;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid grey;
+    margin-top: 1px;
+    right: 0;
+    transform:translateY(-37%);
+}
+.nav-button button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nav-button:hover{
+    background-color: #024d9c;
+    color:white;
+}
+.container {
+    display: flex;
+    margin-top: 15vh;
+}
+.left-container {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    color: aliceblue;
+}
+.map-content {
+    display: flex;
+    margin-bottom: 80px; 
+    height: 300px;
+    border-radius: 60px 60px 0px 0px;
+    background-color:#a1d6e2;;
+    border: 1px solid red;
+    
+}
+.map {
+    width: 300px; 
+    margin-right: 30px; 
+    margin-left: 30px;
+    margin-top: 50px;
+    
+}
+.content {
+    right: 400px;
+    flex: 1;
+    height:350px;
+    width: 200px;
+    background-color: #1995ad;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(1, 1, 0, 0.9);
+    border-radius: 0px 60px 0px 0px;
+    border: 1px solid red;
+    font-size:large;
+}
+.map-content:hover {
+    background-color: #3f3f3f; 
+    color:#a1d6e2; 
+    cursor: pointer;
+}
+.right-container {
+    flex: 1;
+    background-color: #a1d6e2;
+    padding: 20px;
+    
+
+}
+.right-container form {
+    display: flex;
+    flex-direction: column;
+    background-color: #1995ad;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px;
+    animation: fadeIn 5s ease-in-out;
+    width: 400px;
+    height: 600px;
+    color: #eaeaea;
+}
+.right-container label {
+    margin-bottom: 10px;
+}
+.right-container input[type="text"],
+.right-container input[type="tel"],
+.right-container input[type="email"],
+.right-container select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.right-container button[type="submit"] {
+    width: calc(100% - 16px);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #024d9c;
+    color: #fff;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.boxes {
+    display: flex;
+    margin-top: 20px; 
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    width: 300px; 
+    height: 350px;
+    background-color: #1995ad; 
+    border: 1px solid #000; 
+    box-sizing: border-box; 
+    color: #eaeaea;
+    border-radius: 30px 0px 30px 0px;
+    border: auto 1px solid;
+    box-shadow: 0px 4px 8px rgba(1, 1, 0, 0.9);
+    word-wrap: inherit;
+    font-size: medium;
+
+}
+.box img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 30px 0px 30px 0px;
+    }
+.box:hover {
+    background-color: #3f3f3f; 
+    color:#a1d6e2; 
+    cursor: pointer;
+}
+.end {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.socialmedia{
+    display: flex;
+    height: 10px;
+    width: 10px;
+}
+.socialmedia img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 5px; 
+}
+</style>
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="lansum.html"><img src="https://lansumproperties.com/wp-content/themes/lansum/assets/images/lansum-logo-Color.png" class="nav-image"></a>
+            <ul>
+                <li><a href="avinash.html">Upcoming Projects</a></li>
+                <li><a href="kalyan.html">Our Projects</a></li>
+                <li><a href="lavan.html">About Us</a></li>
+                <li><a href="lohitha.html">Our Portfolio</a></li>
+                <li><a href="mahitha.html">Careers</a></li>
+                <li><a href="ramya.html">Blog</a></li>
+                <a href="contact.html"><li class="nav-button"><button>Contact Us</button></li></a>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-container">
+            <div class="map-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d121887.76199336788!2d78.178599!3d17.315908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbc29e9270f74d%3A0x9d87e1e3d54164b3!2sChevella%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711614129024!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="content">
+                    <h3>Villam Project at Chevella</h3>
+                    <i class="fa fa-map-marker" style="font-size:20px;color:#d0bdf4"> Chevella</i>
+                    <p>At Chevella, Lansum properties have an upcoming villa project of 50 acres comprising a 5-star resort, international school and a private members only club. Know more about phase-1, launching mid-2023.At Chevella, Lansum properties
+                        .</p>
+                </div>
+            </div>
+            
+            <div class="map-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5347686462505!2d78.37028749999999!3d17.38610555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb943993ac84cf%3A0xa563c2acc9a02a02!2sAlkapur%20Twp%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20500075!5e0!3m2!1sen!2sin!4v1711613303136!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+                </div>
+                <div class="content">
+                    <h3>Project at Alkapur <br>Township</h3>
+                    <i class="fa fa-map-marker" style="font-size:20px;color:#d0bdf4"> Alkapur</i>
+                    <p>Located in the emerging residential hub, Alkapur, Lansum properties are building an exquisite luxury project of whooping 500 apartments over 3 acres. </p>
+                </div>
+            </div>
+
+            <div class="map-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d243675.99011763572!2d78.303615!3d17.390787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb944119bb56f7%3A0xe4bc36bdf28bde0b!2sNarsingi%2C%20Telangana!5e0!3m2!1sen!2sin!4v1711613382471!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="content">
+                    <h3>Commercial Office <br>Building at Narsingi</h3>
+                    <i class="fa fa-map-marker" style="font-size:20px;color:#d0bdf4"> Narsingi</i>
+                    <p>At Narsingi , Lansum properties have an upcoming commercial project for lavish and modern office spaces.</p>
+                </div>
+            </div>
+
+            <div class="map-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7594.536162787083!2d83.36927!3d17.872914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39590e37e9cdf3%3A0x6d7b6d9ecd435261!2sGambhiram%2C%20Andhra%20Pradesh%20530052!5e0!3m2!1sen!2sin!4v1711613448183!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="content">
+                    <h3>Villa Project at <br>Gambhiram, <br>Vishakapatnam</h3>
+                    <i class="fa fa-map-marker" style="font-size:20px;color:#d0bdf4"> Gambhiram, Visakhapatnam</i>
+                    <p>At Gambhiram, Visakhapatnam, Lansum properties have an upcoming villa project. Reach out to us for more information.</p>
+                </div>
+            </div>
+
+            <div class="map-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60911.30003461419!2d78.341226!3d17.413887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb94788f8c70c5%3A0xab6ff27f0783ae19!2sNanakramguda%2C%20Telangana%20500032!5e0!3m2!1sen!2sin!4v1711613480284!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="content">
+                    <h3>Luxury Gated Community <br>Project at <br>Nanakaramguda</h3>
+                    <i class="fa fa-map-marker" style="font-size:20px;color:#d0bdf4">Nanakaramguda</i>
+                    <p>At Nanakaramguda, Financial District. Lansum properties have an upcoming project for a luxury gated community. Reach out to us for more information.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <h2 style="text-align: center;">To know more about our projects<br> fill in the form and we will reach out to you.</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                </div>
+                <div class="form-group">
+                    <label for="select">Select Projects</label>
+                    <select id="select" name="select">
+                        <option value="option1">Select Project</option>
+                        <option value="option2">Villam Project at Chevella</option>
+                        <option value="option3">Project at Alkapur Township</option>
+                        <option value="option4">Commercial Office at Gambhiram, Visakhapatnam</option>
+                        <option value="option5">Luxury gated community project at Nanakaramaguda</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required> I agree to the <a href="https://lansumproperties.com/privacy-policy">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="boxes">
+                <div class="box">
+                    <img src="https://www.beaches.com/blog/content/images/2021/03/Beaches-Turks-Caicos-Overview.jpg" alt="Resort">
+                    <p style="text-align: center;">1. Villam Project at Chevella </p>
+                   <p style="text-align: center;"> we designe to provide recreation, entertainment, and accommodation especially to vacationers. A community or establishment whose purpose or main industry is catering to vacationers. resort.</p>
+
+                </div>
+                <div class="box">
+                    <img src="https://resize.indiatvnews.com/en/resize/oldbucket/1200_-/businessindia/How-to-choose-t13260.jpg" alt="Township">
+                    <p style="text-align: center;">2. Project at Alkapu Township</p>
+                   <p style="text-align: center;"> A piece of territory designed to define ownership of land or property that, within specific parameters, includes all necessary services.</p>
+
+
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <img src="https://img.squareyards.com/secondaryPortal/638162341364176683-0404230742164216.jpg" alt="Office space">
+                    <p style="text-align: center;">3. Commercial Office Building at Narsingi</p>
+                    <p style="text-align: center;"> commercial property that offers one or more rooms suited to a business performing office-related or administrative duties</p>
+
+                </div>
+                <div class="box">
+                    <img src="https://www.favouritehomes.com/wp-content/uploads/2021/12/luxury-villa.jpg" alt="Villas">
+                    <p style="text-align: center;">4. Commercial Office Building at Narsingi</p>
+                    <p style="text-align: center;">A type of detached house that is typically larger and more luxurious than a regular house.These offer a variety of amenities, such as swimming pools, gardens, and security features.</p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <img src="https://tayalestates.com/wp-content/uploads/2021/10/gate-2-584x438.jpg" alt=" Gated Community">
+                    <p style="text-align: center;">5. Villa Project at Gambhiram,Vishakapatnam</p>
+                    <p style="text-align: center;">A group of houses, surrounded by fences or walls, that can only be entered by the people who live there.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="end">
+      <div> 
+        <h3 style="color: #045160;">Adress</h3> 
+        <p style="color: #1995ad;">Hyderabad Office : Plot No.283, Road No.78, Jubilee Hills, Hyderabad</p> 
+        <p style="color: #1995ad;">Vishakapatnam Office : D. No. 50-40-17/C, TPT Colony, Seethamadhara,<br> Visakhapatnam</p>
+    </div>
+      <div>
+        <h3 style="color: #045160;">Corporate Office</h3>
+        <p style="color: #1995ad;">Hyderabad : +9140 23122666</p> 
+        <p style="color: #1995ad;">Vishakapatnam : +91891 - 2722768</p>
+        <p style="color: #1995ad;">Sales Hotline Number : +91 8103333222</p>
+        <p style="color: #1995ad;">Email : hi@lansumproperties.com</p>
+    </div>
+      <div>
+        <h3 style="color: #045160;">TERMS OF USE PRIVACY POLICY</h3>
+        <div class="socialmedia">
+        <a href="https://ibb.co/kqJMBBw"><img src="https://i.ibb.co/kqJMBBw/facebook.jpg" alt="facebook" ></a>
+        <a href="https://ibb.co/MVtzk6D"><img src="https://i.ibb.co/MVtzk6D/twittr.jpg" alt="twittr" ></a>
+        <a href="https://ibb.co/R6L39Py"><img src="https://i.ibb.co/R6L39Py/pinterrest.jpg" alt="pinterrest" ></a>
+        <a href="https://ibb.co/FJthRkV"><img src="https://i.ibb.co/FJthRkV/youtu.jpg" alt="Linkdin" ></a>
+        <a href="https://ibb.co/4ZZ19nq"><img src="https://i.ibb.co/4ZZ19nq/insta.jpg" alt="insta"></a>
+        <a href="https://ibb.co/MRNqZFz"><img src="https://i.ibb.co/MRNqZFz/youtube.jpg" alt="youtube"></a>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p> Lansum Properties &copy;All rights reserved. Design and developed by NS Technolgies</p>
+    </div>
+</body>
+</html>

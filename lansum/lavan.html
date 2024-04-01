@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANSUM Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .navbar{
+    height: 15vh;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 2px 3px lightgray;
+    position: relative;
+    z-index: 1000;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 300px;
+    margin-top: -30px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: grey;
+    font-size: 19px;
+    text-decoration: none;
+    margin: 10px;
+}
+nav ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.nav-image{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.nav-button{
+    width: 150px;
+    height: 40px;
+    margin-left: 900px;
+    margin-right: 80px;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid grey;
+    margin-top: -30px;
+    right: 0;
+    transform:translateY(-37%);
+}
+.nav-button button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nav-button:hover{
+    background-color: #024d9c;
+    color:white;
+}
+
+        header {
+            background-image: url(https://media.istockphoto.com/id/688441136/photo/development-area-with-new-houses.jpg?s=612x612&w=0&k=20&c=jLbNlTZI9H6YzoLWsqXEAvZNmORqdFGr_1QX2382hgw=);
+            margin: auto;
+            padding: 150px;
+            text-align: center;
+            opacity: 0.5;
+            
+        }
+
+        .background-color {
+            background-color: #A1D6E2;
+        }
+        h1 {
+            font-size: 40px;
+            color: #A1D6E2;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #1995AD;
+            margin-bottom: 15px;
+
+        }
+
+        .flex1 {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 50px;
+            background-color: #A1D6E2;
+        }
+        .text right {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .image left {
+            max-width: 100%; 
+            height: auto;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 50px;
+        }
+        .text-on-right {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .image-on-left {
+            max-width: 100%; 
+            height: auto;
+        }
+
+        .background-color1 {
+            background-color: #A1D6E2;
+            padding: 20px;
+            margin: 100px;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #A1D6E2; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
+
+        .text {
+            flex: 1;
+            text-align: left;
+            padding-right: 20px;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: #888;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #333;
+        }
+
+        #slide1:checked ~ .slides { transform: translateX(0); }
+        #slide2:checked ~ .slides { transform: translateX(-100%); }
+        #slide3:checked ~ .slides { transform: translateX(-200%); }
+        #slide4:checked ~ .slides { transform: translateX(-300%); }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: white;
+           
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+        padding: 10px; 
+        background-color: #1995AD;
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="lansum.html"><img src="https://lansumproperties.com/wp-content/themes/lansum/assets/images/lansum-logo-Color.png" class="nav-image"></a>
+        <ul>
+            <li><a href="avinash.html">Upcoming Projects</a></li>
+            <li><a href="kalyan.html">Our Projects</a></li>
+            <li><a href="lavan.html">About Us</a></li>
+            <li><a href="lohitha.html">Our Portfolio</a></li>
+            <li><a href="mahitha.html">Careers</a></li>
+            <li><a href="ramya.html">Blog</a></li>
+            
+        </ul>
+        <button class="nav-button">Contact Us</button>
+    </nav>
+    
+    <header>
+        <p style="font-size: 40px;color: black;">Commitment to Rise Above the Ordinary</p>
+    </header>
+    <div class="background-color">
+    <section>
+        <p style="font-size:xx-large;text-align: center;">Building Communities. Enriching Lives.</p>
+        <p style="text-align: center;">A commitment to enrich lives, coupled with quality, integrity, and innovation have defined LANSUM Properties since <br> its inception. At LANSUM Properties we create more than just a building. We create communities – the kind of <br> desirable places that people are proud to own, and proud to call home.</p>
+        <p style="text-align: center;">LANSUM Properties has established a reputation for creating high-quality developments and designing inspiring <br> environments. Everything we do is based upon one simple premise – creating timeless, beautiful, and desirable <br> homes that are purpose-designed for the way people want to live today. ‘The Joy of Housing’ is a motto we strive <br> for, and we hope to make home buying a joyful experience as it should be.</p>
+    </section>
+    </div>
+    <div class="flex1">
+    <section>
+        <div class="image left">
+            <img src="https://lansumproperties.com/wp-content/uploads/2019/09/mission.png" alt="Image">
+        </div>
+        </section>
+        
+        <div class="text right">
+        <h1>Mission</h1>
+        <p>LANSUM Properties mission is to elevate the lifestyle of the people <br> who choose to live, work, and stay in what we build.</p>
+    
+    
+        <h1>New Thinking</h1>
+        <p>Today, LANSUM Properties is a progressive real estate development <br> company without equal. From striving to reach ever-higher standards <br> of quality to raising the bar on design and construction to our focus on <br> providing outstanding property management services, we stay ahead <br> by leading, never following.</p>
+    
+    
+        <h1>It’s All About the People</h1>
+        <p>We understand the qualities required to build projects of lasting value: <br> integrity, inspiration, and craftsmanship, backed by a commitment to <br> new thinking in everything we do. Our team is second to none with the <br> experience and vision to surpass your expectations.</p>
+    
+</div>
+</div>
+    
+    
+       <div class="background-color1">
+        <h1 style="text-align: center;">Our Mentor</h1>
+        <p style="text-align: center;">The driving force behind our innovation and excellence.</p>
+        <div class="flex">
+        <div class="image-on-left">
+            <img src="https://lansumproperties.com/wp-content/themes/lansum/assets/images/K_Umesh.png" alt="Image">
+        </div>
+        <div class="text-on-right">
+        <p><strong>Mr. K. Umesh</strong><br>
+        Chairman & Managing Director<br>
+        Mr. K. Umesh is the Chairman & Managing Director of LANSUM Properties. He’s had an <br> illustrious career in multiple sectors as a senior bureaucrat and even in the Indian Defense <br> Forces for a short stint. Mr. K. Umesh did Mechanical Engineering from Andhra University <br> and was a part of the Indian Civil Services for 23 years. He was bestowed the Presidential <br> Award for his meritorious service in Customs, Excise and Service Tax departments. Post <br> that he took voluntary retirement and joined the NTR Memorial Trust as its CEO and <br> rendered exceptional services.</p>
+     </div>
+     </div>
+    </div>
+
+    <div class="slideshow">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        
+        <div class="slides">
+            <div class="slide">
+                <div class="text">
+                    <h1>Our Happy Customers</h1>
+                    <p>We are very happy with LANSUM Etania at Gachibowli. No doubt it is <br> one of the most beautifully designed luxury properties in <br> Gachibowli. I appreciate the sincerity and hard work LANSUM <br> developers have put in to complete it. The management and support <br> team were very cooperative in terms of payment and other issues. We <br> are now looking forward to moving into our new house in November <br> 2019. </p>
+                    <br>
+                    <br>
+                    <h3 style="color: #1995AD;">Mr. Kshitish Chandra Sarkar</h3>
+                    <p>Head of Signaling, Wabtec Control System</p>
+                </div>
+                <div class="image">
+                    <img src="https://lansumproperties.com/wp-content/uploads/2019/09/Our-Happy-Customers-Etania.png" alt="Image">
+                </div>   
+            </div>
+            <div class="slide">
+                <div class="text">
+                    <h1>Our Happy Customers</h1>
+                    <p>We feel lucky to own a flat in LANSUM Greens at Madhavadhara. It is <br> a superb location, very close to the highway, yet quite and a decent <br> place to stay. Excellent gated community with top class amenities. This <br> is a dream come true for us.</p>
+                    <br>
+                    <br>
+                    <h3 style="color: #1995AD;">PGK Chaitanya</h3>
+                    <p>Techinical Officer, Bhabha Atomic Research Centre</p>
+                </div>
+                <div class="image">
+                    <img src="https://lansumproperties.com/wp-content/uploads/2019/09/Our-Happy-Customers-Greens.png" alt="Image">
+                </div> 
+            </div>
+            <div class="slide">
+                <div class="text">
+                    <h1>Our Happy Customers</h1>
+                    <p>Happy to be a part of the LANSUM family for 2 years. People involved <br> in the construction are very good and caring. In-time house delivery, <br> quality of construction is very good. Looking forward to buying more <br> properties from LANSUM.</p>
+                    <br>
+                    <br>
+                    <h3 style="color: #1995AD;">DR.Kaushik Bharam</h3>
+                    <p>Orthopedic surgeon, Prathima Hospital</p>
+                </div>
+                <div class="image">
+                    <img src="https://lansumproperties.com/wp-content/uploads/2019/09/Our-Happy-Customers-Lakshmi-Nilayam.png" alt="Image">
+                </div> 
+            </div>
+            <div class="slide">
+                <div class="text">
+                    <h1>Our Happy Customers</h1>
+                    <p>We purchased two flats in LANSUM Etania platinum block. I am very <br> happy to say that I have made a good decision. I have been following <br> the progress of the project and the material they are using for <br> construction, and the fittings are high quality. We are eagerly <br> waiting to shift.</p>
+                    <br>
+                    <br>
+                    <h3 style="color: #1995AD;">Dr.P.V Subba Reddy</h3>
+                    <p>Senior Consultant, Indraprastha Hospital, Delhi</p>
+                </div>
+                <div class="image">
+                    <img src="https://lansumproperties.com/wp-content/uploads/2019/09/Our-Happy-Customers-Etania.png" alt="Image">
+                </div>
+            </div>
+        </div>
+    
+        <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <footer>
+        <section>
+            <h2 style="text-align: left;color: #1995AD;">Address</h2>
+            <p style="text-align: left;"><strong>Hyderabad Office:</strong> Plot No.283, Road No.78, Jubilee <br> Hills, Hyderabad</p>
+            <p style="text-align: left;"><strong>Vishakapatnam Office:</strong> D. No. 50-40-17/C, TPT Colony,<br> Seethamadhara, Visakhapatnam</p>
+        </section>
+
+        <section>
+            <h2 style="text-align: left;color: #1995AD;">Corporate Office</h2>
+            <p style="text-align: left;"><strong>Hyderabad:</strong> +9140 23122666</p>
+            <p style="text-align: left;"><strong>Vishakapatnam:</strong> +91891 – 2722768</p>
+            <p style="text-align: left;"><strong>Sales Hotline Number:</strong> +91 8103333222</p>
+            <p style="text-align: left;"><strong>Email:</strong> hi@lansumproperties.com</p>
+        </section>
+    <section>
+        <p>TERMS OF USE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRIVACY POLICY</p>
+        <p style="font-size: xx-large;">
+          <a href="#" style="color: black;"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color: black;"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="color: black;"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#" style="color: black;"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color: black;"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" style="color: black;"><i class="fa-brands fa-linkedin"></i></a>
+        </p>
+    </section>
+     <p>Lansum Properties © 2024 All Rights Reserved. Design and developed by Ns Technologies</p>
+    </footer>
+</body>
+</html>

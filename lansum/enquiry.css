@@ -1,0 +1,228 @@
+.navbar{
+    height: 15vh;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 2px 3px lightgray;
+    position: fixed;
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 300px;
+    margin-top: -30px;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: grey;
+    font-size: 19px;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+nav ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.nav-image{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.contactus{
+    width: 150px;
+    height: 40px;
+    margin-left: 1100px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid grey;
+    margin-top: 13px;
+    color: black;
+    padding: 5px;
+}
+.contactus:hover{
+    background-color: #1995ad;
+    color: white;
+}
+.container11{
+    background-image: url("https://img.freepik.com/premium-photo/free-photo-business-partners-shaking-hands-agreement_1069199-56.jpg?w=826");
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 5px 10px lightgray;
+    
+
+}
+.container11-text11{
+    color: white;
+    width: 500px;
+    margin-left: 70px;
+    padding-top: 100px;
+}
+.container11-text12{
+    color: white;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.container11-text13{
+    color: white;
+    font-size: 20px;
+    margin-left: 800px;
+    margin-top: -150px;
+}
+.container11-text14{
+    color: white;
+    font-size: 25px;
+    margin-left: 800px;
+    margin-top: 10px;
+
+}
+.container12-sub{
+    font-size: 17px;
+    margin-top: 50px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    
+}
+.container12-text1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container12{
+    background-image: linear-gradient(white,lightblue);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+body { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-family: sans-serif; 
+	line-height: 1.5; 
+	min-height: 100vh; 
+	background: lightgray; 
+	flex-direction: column; 
+	margin: 0; 
+} 
+
+.main { 
+	background-color: pink; 
+	border-radius: 15px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	padding: 10px 20px; 
+	transition: transform 0.2s; 
+	width: 500px; 
+	text-align: center; 
+} 
+
+h1 { 
+	color: #1995ad; 
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+	color: grey; 
+	font-weight: bold; 
+} 
+
+#pass { 
+	color: orange; 
+	font-size: 12px; 
+} 
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+
+select { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 1px solid #ddd; 
+	border-radius: 5px; 
+} 
+
+button { 
+	padding: 15px; 
+	border-radius: 10px; 
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	border: none; 
+	color: white; 
+	cursor: pointer; 
+	background-color: #1995ad; 
+	width: 100%; 
+	font-size: 16px; 
+} 
+
+.wrap { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+.container13{
+    background-color: white;
+    margin-left: 150px;
+    width: 400px;
+    padding: 20px;
+    margin-top: -120px;
+
+}
+.form-text1{
+    font-size: 17px;
+    margin-top: -20px;
+}
+.footer-sub{
+    width: 300px;
+    margin-left: 30px;
+
+
+}
+.footer-main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -120px;
+}
+.footer-address{
+    color: #1995ad;
+}
+.footer-text3{
+    margin-left: 60px;
+}
+.icon11{
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: -65px;
+
+}
+.footer-text4{
+    margin-top: 250px;
+    margin-left: -500px;
+}
+.container13{
+    box-shadow: 2px 2px 2px 2px lightblue;
+}
